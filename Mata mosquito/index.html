@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css/style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body onresize="sizeAdjustment()">
+    <div class="panel">
+      <div class="lifePoints">
+        <img id="hp1" src="./style.css/imagens/coracao_cheio.png" />
+        <img id="hp2" src="./style.css/imagens/coracao_cheio.png" />
+        <img id="hp3" src="./style.css/imagens/coracao_cheio.png" />
+      </div>
+      <div class="timer">Remaining Time: <span id="timerGame"></span></div>
+    </div>
+    <script>
+      // colocado aqui primeiro para começar ao mesmo tempo
+      document.getElementById("timerGame").innerText = seconds;
+      // randomPositioning(); //foi criado dessa maneira, por conta do script inicial ser lido antes do body ser gerado.
+      let createMosquito = setInterval(function () {
+        randomPositioning();
+      }, createMosquitoTimer); //troquei o valor pela busca no js dos valores da dificuldade
+      //agora sim fará a função no interavalo de 2000 milisegundos ou 2 segundos
+    </script>
+  </body>
+</html>

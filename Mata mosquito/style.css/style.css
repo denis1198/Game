@@ -1,0 +1,48 @@
+html {
+  cursor: url(./imagens/mata_mosquito.png) 30 30, auto;
+}
+.mosquito1 {
+  width: 50px;
+  height: 50px;
+}
+
+.mosquito2 {
+  width: 70px;
+  height: 70px;
+}
+
+.mosquito3 {
+  width: 90px;
+  height: 90px;
+}
+
+.left-side {
+  transform: scaleX(-1);
+}
+/* não fiz um para outro lado por conta de uma das posições já ser a original */
+body {
+  background-image: url(./imagens/bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.panel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  bottom: 0px;
+  left: 0px;
+  border-top: 2px solid #fff;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.timer {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lifePoints {
+  float: left;
+}
